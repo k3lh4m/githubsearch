@@ -5,7 +5,35 @@
         <link rel="stylesheet" type="text/css" href="public/css/app.css">
     </head>
 
-    <body>
-        <h1>Red</h1>
+
+    <body ng-controller="MainController">
+        <div class="page">
+            <div class="main-slider">
+                <div class="card-single">
+
+                </div>
+                <h3>GitHub Search</h3>
+                <p>Get the user: {{user.login}}{{error}}</p>
+                <p>Location: {{user.location}}</p>
+            </div>
+
+            <form name="changeUser">
+                <div class="form-group">
+                    <input ng-model="username" class="form-control" />
+                </div>
+
+                <button ng-click="search(username)" class="btn btn-primary">Submit</button>
+                <button ng-click="resetForm()" class="btn btn-secondary">Clear</button>
+            </form>
+
+            <ul ng-repeat="repo in repos">
+                <li>{{repo.name}}</li>
+            </ul>
+        </div>
     </body>
+
+    <!--<script src="bower_components/angular/angular.js" type="javascript"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="app.js"></script>
+
 </html>
