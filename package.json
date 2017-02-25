@@ -1,0 +1,27 @@
+{
+  "name": "githubsearch",
+  "version": "1.0.0",
+  "description": "My first angular project, so just having a play around.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k3lh4m/githubsearch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k3lh4m/githubsearch/issues"
+  },
+  "homepage": "https://github.com/k3lh4m/githubsearch#readme"
+}

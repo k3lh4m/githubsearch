@@ -1,0 +1,20 @@
+{
+  "name": "githubsearch",
+  "description": "Angular App to show GitHub Users",
+  "main": "app.js",
+  "authors": [
+    "Sam Kelham"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/k3lh4m/githubsearch",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}
