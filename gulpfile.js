@@ -3,14 +3,14 @@ var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 
 var config = {
-    bootstrapDir: './bower_components/bootstrap-sass',
+    bootstrapDir: './bower_components/bootstrap',
     publicDir: './public',
 };
 
 gulp.task('css', function() {
     return gulp.src('./css/app.scss')
         .pipe(sass({
-            includePaths: [config.bootstrapDir + '/assets/stylesheets'],
+            includePaths: [config.bootstrapDir + '/scss'],
         }))
         .pipe(gulp.dest(config.publicDir + '/css'));
 });
